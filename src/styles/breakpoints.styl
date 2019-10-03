@@ -1,0 +1,17 @@
+small = 320px;
+mobile = 480px;
+tablet = 768px;
+laptop = 1024px;
+desktop = 1280px;
+
+less-than(size)
+  @media screen and (max-width: size)
+    {block}
+
+greater-than(size)
+  @media screen and (min-width: size)
+    {block}
+
+between(min, max)
+  @media screen and (min-width: min) and (max-width: max)
+    {block}

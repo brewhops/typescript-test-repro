@@ -1,0 +1,22 @@
+Flex(vertical, horizontal)
+  display flex
+  align-items vertical
+  justify-content horizontal
+
+BackgroundColorTransition(Action, TransitionTime, StartColor, EndColor)
+  background StartColor
+  transition background transitionTime ease
+  //sets the following code to aply on on the action (hover, focus, etc.)
+  &:{Action}
+    background EndColor
+    transition background TransitionTime ease
+
+Width(Min, Mid, Max)
+  min-width Min
+  width Mid
+  max-width Max
+
+Height(Min, Mid, Max)
+  min-height Min
+  height Mid
+  max-height Max
